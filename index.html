@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Scheme Picker</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+  <div class="container">
+    <div class="input-bar">
+      <input type="color" name="color-picker" id="color-picker" value="#f45a5a">
+      <select name="" id="scheme-selector">
+        <option value="monochrome">Monochrome</option>
+        <option value="Monochrome-dark">Monochrome-dark</option>
+        <option value="Monochrome-light">Monochrome-light</option>
+        <option value="Analogic">Analogic</option>
+        <option value="Complement">Complement</option>
+        <option value="Analogic-Complement">Analogic-Complement</option>
+        <option value="Triad">Triad</option>
+      </select>
+      <button class="color-button">Get color scheme</button>
+    </div>
+    <div class="colors">
+      <span class="color"></span>
+      <span class="color"></span>
+      <span class="color"></span>
+      <span class="color"></span>
+      <span class="color"></span>
+    </div>
+    <div id="snackbar">Copied to clipboard...</div>
+    <div class="color-codes">
+      <div class="code"></div>
+      <div class="code"></div>
+      <div class="code"></div>
+      <div class="code"></div>
+      <div class="code"></div>
+    </div>
+  </div>
+  <script src="./js/index.js"></script>
+</body>
+</html>
